@@ -5,7 +5,7 @@ package tests.puremvc
 	
 	/**
 	 * @author Tim Robles
-     */
+	*/
 	
 	public class NotificationEvent extends Event
 	{
@@ -15,11 +15,11 @@ package tests.puremvc
     	
     	protected var _notification:INotification;
 	
-	   	//--------------------------------------------------------------------------
-    	//
-    	//  Constructor    	
+		//--------------------------------------------------------------------------
 		//
-    	//--------------------------------------------------------------------------
+		//  Constructor    	
+		//
+		//--------------------------------------------------------------------------
 
     	public function NotificationEvent(notification:INotification, bubbles:Boolean = false, cancelable:Boolean = false) 
 		{
@@ -27,15 +27,15 @@ package tests.puremvc
     		_notification = notification;
     	}
 
-   	   	//--------------------------------------------------------------------------
-		//    
+		//--------------------------------------------------------------------------
+		/    
 		//  Public Methods
-    	//
-    	//--------------------------------------------------------------------------
+		//
+		//--------------------------------------------------------------------------
 
 		public function get notification():INotification 
 		{
 	 		return _notification;
-    	}
+		}
 	}
 }
