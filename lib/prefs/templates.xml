@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Creates an empty class" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.class" name="class">/**
+ * @author Tim Robles
+ */
+class ${enclosing_package_and_type} ${cursor}{
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates an empty class without an package declaration" enabled="true" id="com.powerflasher.fdt.ui.editor.template.class" name="class">/**
+ * @author Tim Robles
+ */
+class ${enclosing_type} ${cursor}{
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Complete Handler" enabled="true" name="comph">private function completeHandler(event:Event):void
+{
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Creates Constructor for a class" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.constructor" name="constructor">//--------------------------------------------------------------------------
+//
+//  Constructor
+//
+//--------------------------------------------------------------------------
+
+public function ${enclosing_type}() {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates Constructor for a class" enabled="true" id="com.powerflasher.fdt.ui.editor.template.constructor" name="constructor">//--------------------------------------------------------------------------
+//
+//  Constructor
+//
+//--------------------------------------------------------------------------
+
+public function ${enclosing_type}() 
+{
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="static create a component" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.create" name="create">public static function create(container : MovieClip,name : String,
+		depth : Number, init : Object) : ${enclosing_type} {
+	var mc : MovieClip = container.attachMovie("${enclosing_package_and_type}", name, depth, init);	
+	return ${enclosing_type}(mc);
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="do-while loop" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.do" name="do">do {
+	${cursor}
+} while (${condition});</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="do-while loop" enabled="true" id="com.powerflasher.fdt.ui.editor.template.do" name="do">do {
+	${cursor}
+} while (${condition});</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Iterator over an array using enumeration" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.foren" name="fore">for (var ${index} : String in ${array}) {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Iterator over keys of an array using enumeration" enabled="true" id="com.powerflasher.fdt.ui.editor.template.foren" name="fore">for (var ${index} : String in ${array}) {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Iterator over value of an array using enumeration" enabled="true" id="com.powerflasher.fdt.ui.editor.template.foreach" name="foreach">for each (var ${index} : ${type} in ${array}) {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Iterator over an array" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.forit" name="fori">for (var ${index} : Number = 0; ${index} &lt; ${array}.length; ${index}++) {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Iterator over an array" enabled="true" id="com.powerflasher.fdt.ui.editor.template.forit" name="fori">for (var ${index} : Number = 0; ${index} &lt; ${array}.length; ${index}++) {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="test type and cast" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.instanceof" name="instanceof">if (${name} instanceof ${type}) {
+	var ${newName} : ${type} = ${type}(${name});
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Creates an empty interface" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.interface" name="interface">/**
+ * @author ${user}
+ */
+interface ${enclosing_package_and_type} ${cursor}{
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates an empty interface" enabled="true" id="com.powerflasher.fdt.ui.editor.template.interface" name="interface">/**
+ * @author ${user}
+ */
+interface ${enclosing_type} ${cursor}{
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="test type and cast" enabled="true" id="com.powerflasher.fdt.ui.editor.template.is" name="is">if (${name} is ${type}) {
+	var ${newName} : ${type} = ${type}(${name});
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="lazy create an instance" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.lazy" name="lazy">if (${name} == null) {
+	${name} = new ${type}(${arguments});
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="lazy create an instance" enabled="true" id="com.powerflasher.fdt.ui.editor.template.lazy" name="lazy">if (${name} == null) {
+	${name} = new ${type}(${arguments});
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Creates an MTASC public static main function" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.smain" name="main">public static function main(container : MovieClip) : Void {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Minor Separator" enabled="true" name="msep">//----------------------------------
+//  ${cursor}
+//----------------------------------</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Minor Separator" enabled="true" name="msep">//----------------------------------
+//  ${cursor}
+//----------------------------------</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Out Handler" enabled="true" name="out">private function outHandler(mouseEvent:MouseEvent):void
+{
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Over Handler" enabled="true" name="over">private function overHandler(mouseEvent:MouseEvent):void
+{
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Creates an empty package declaration" enabled="true" id="com.powerflasher.fdt.ui.editor.template.package" name="package">package ${enclosing_package} {
+	${cursor}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Public Methods" enabled="true" name="pubm">//--------------------------------------------------------------------------
+//
+//  Public Methods
+//
+//--------------------------------------------------------------------------
+
+${cursor}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="Major Separator" enabled="true" name="sep">//--------------------------------------------------------------------------
+//
+//  ${cursor}
+//
+//--------------------------------------------------------------------------</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Major Separator" enabled="true" name="sep">//--------------------------------------------------------------------------
+//
+//  ${cursor}
+//
+//--------------------------------------------------------------------------</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="Creates complete Singleton" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.singleton" name="singleton">/**
+ * @author ${user}
+ */
+class ${enclosing_package_and_type} {
+	
+	private static var instance : ${enclosing_type};
+	
+	/**
+	 * @return singleton instance of ${enclosing_type}
+	 */
+	public static function getInstance() : ${enclosing_type} {
+		if (instance == null)
+			instance = new ${enclosing_type}();
+		return instance;
+	}
+	
+	private function ${enclosing_type}() {
+		${cursor}
+	}
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="trace current method" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.systrace" name="systrace">trace("${enclosing_type}.${enclosing_method}(${enclosing_method_arguments})");</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="trace current method" enabled="true" id="com.powerflasher.fdt.ui.editor.template.systrace" name="systrace">trace("${cursor}");</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as2" deleted="false" description="creates toString function" enabled="true" id="com.powerflasher.fdt.ui.editor.template.as2.toString" name="toString">public function toString() : String {
+	return "${enclosing_package_and_type}";
+}</template><template autoinsert="true" context="com.powerflasher.fdt.ui.editor.template.as3" deleted="false" description="creates toString function" enabled="true" id="com.powerflasher.fdt.ui.editor.template.toString" name="toString">override public function toString() : String {
+	return "${enclosing_package_and_type}";
+}</template></templates>
